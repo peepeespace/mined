@@ -2,7 +2,7 @@ import "../css/main.css";
 import Axios from "axios";
 import qs from "qs";
 
-const blogApiURL = "http://localhost:8888/api/blog";
+const blogApiURL = "https://mined.kr/api/blog";
 const logo = document.getElementsByClassName("navlogo")[0];
 
 logo.addEventListener("click", (e) => {
