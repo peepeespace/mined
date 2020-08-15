@@ -1,0 +1,156 @@
+:root {
+  --text-dark: #363636;
+  --text-light: #878787;
+  --shadow: #e8e8e8;
+  --background: #f0f0f0;
+  --green: #00b894;
+  --pink: #fd79a8;
+  --light-pink: #ffabc9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 62.5%;
+  color: var(--text);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid var(--shadow);
+  display: flex;
+  justify-content: center;
+}
+
+.navlogo {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--green);
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.form-practice {
+  margin-top: 1.5rem;
+  width: 80%;
+  padding: 2rem;
+  border: 1px solid var(--shadow);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px var(--shadow), -1px -1px 5px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-practice .title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-size: 1.6rem;
+  background: linear-gradient(to top, var(--light-pink) 40%, transparent 40%);
+}
+
+.form-practice form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.form-row label {
+  width: 15%;
+  text-align: right;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  color: var(--text-light);
+}
+
+.form-row input[type="text"] {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid var(--text-light);
+}
+
+.form-practice input[type="submit"] {
+  margin-top: 1rem;
+  width: 50%;
+  padding: 1rem 0;
+  border: none;
+  background: var(--green);
+  color: white;
+  cursor: pointer;
+}
+
+.form-practice input[type="text"]:focus {
+  outline: none;
+}
+
+.form-practice input[type="submit"]:focus {
+  outline: none;
+}
+
+.blog-content {
+  width: 80%;
+  margin-top: 1.5rem;
+}
+
+.blog-entry {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--shadow);
+}
+
+.blog-entry .title {
+  font-size: 2rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.blog-entry .subtitle {
+  font-size: 1.7rem;
+  font-weight: 100;
+  color: var(--text-light);
+}
+
+.blog-entry .content {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.blog-entry .title:hover {
+  color: var(--text-light);
+}
+
+/* 모바일용 */
+@media only screen and (max-width: 400px) {
+}
+/* 태블릿용 */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+}
+/* 데스크탑용 */
+@media only screen and (min-width: 961px) {
+}
