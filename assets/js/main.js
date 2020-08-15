@@ -49,3 +49,5 @@ window.addEventListener("load", async (e) => {
     blogContentSectionn.insertAdjacentHTML("beforeend", blogEntryHTML);
   }
 });
+
+console.log("hello");
